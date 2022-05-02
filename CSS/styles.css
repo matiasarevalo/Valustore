@@ -1,0 +1,422 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+        
+}
+
+/* ------ header ------ */
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: Beau Rivage; 
+}
+
+.encabezado{
+    background-color: #E3B7A0;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.encabezado__rs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10%;
+}
+
+.logo__rs{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    width: 30px;
+}
+
+.valu__logo{
+    width: 160px;
+    height: 150px;
+    justify-content:center
+    
+}
+
+.textoBlanco{
+    color:white
+}
+
+
+
+/* ----------------------  ZONA NAV  --------------- */
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.barra__navegacion{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:baseline;
+    margin: 15px;
+    list-style: none;
+}
+.menu__boton{
+    text-decoration: none;
+    background-color: #E3B7A0;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    align-items: center;
+}
+.menu__boton:hover{
+    color: #BF9270;
+    transition: 1s;
+    text-shadow: none;
+}
+
+/* ------------- BODY ------------- */
+
+.zona__banner{
+    width: 100%;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fondo__byb{
+    background:linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.5)), url(../images/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.zona__banner h2{
+    font-size: 50px;
+    font-family: Beau Rivage;
+    
+}
+body{
+    background-image: linear-gradient(to top left, #E3B7A0, white);
+}
+
+.textoGrande{
+    font-size: 20px;
+}
+
+#TextoG{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #E3B7A0;
+} 
+a{text-decoration: none;}
+
+/* GRID index - Zona productos destacados */
+
+.destacados{
+    margin-top: 20px;
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6";
+}
+.texto__dest{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.card1{
+    justify-self: center;
+    grid-area: card1;
+}
+.card2{
+    justify-self: center;
+    grid-area:card2;
+}
+.card3{
+    justify-self: center;
+    grid-area: card3;
+}
+.card4{
+    justify-self: center;
+    grid-area: card4;
+}
+.card5{
+    justify-self: center;
+    grid-area:card5;
+}
+.card6{
+    justify-self: center;
+    grid-area: card6;
+}
+
+.destacada{
+    height:250px;
+    width: auto;
+    margin-bottom: 20px;
+    box-shadow: 15px 15px 15px rgb(0, 0, 0, 0.5);
+
+}
+.card{
+    width: 400px;
+    height: 250px;
+    justify-self: center;
+}
+
+
+/* ---------- pagina Clothes -------------*/
+
+
+.conteiner{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas: 
+    "clothes1 clothes2 clothes3 clothes4";
+    justify-items: center;
+    
+}
+.clothes1 {
+    grid-area: clothes1;
+    text-align: center;
+}
+
+.clothes2 {
+    grid-area: clothes2;
+    text-align: center;
+}
+
+.clothes3 {
+    grid-area: clothes3;
+    text-align: center;
+}
+
+.clothes4 {
+    grid-area: clothes4;
+    text-align: center;
+}
+.img__clothes{
+    height: 250px;
+    width: auto;
+    border-radius: 15px;
+}
+
+/* ------ GRID (sección Terminos y condiciones) ------- */
+.padre{ 
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "showroom envios publicidad"
+    "showroom envios publicidad"
+    "showroom bariloche bariloche"
+    "footer footer footer"
+    ;
+    grid-template-rows: 40% 30% 30% 1fr; 
+    grid-template-columns: 30% auto 20%;
+}
+.border{
+    border: solid 10px white; 
+}
+
+section#showroom{ background-color: #BF9270;
+    grid-area: showroom;
+    text-align: center;
+    color: #fff;
+    padding: 5%;
+}
+
+section#bariloche{ background-color: #BF9270;
+    grid-area: bariloche;
+    text-align: center;
+    color: #fff;
+    
+}
+aside{ background-color: lightsalmon;
+    grid-area: publicidad;
+    text-align: center;
+    color: #fff;
+    padding: 5%;
+}
+section#envios{ background-color: #E3B7A0;
+    grid-area: envios;
+    text-align: center;
+    color: #fff;
+    padding: 5%;
+}
+footer{ background-color: black;
+    grid-area: footer;
+
+}
+.img__showroom{ height: 15%;}
+.img__brc{ height: 50%;}
+.img__publi{ height: 20%;}
+.img__envios{ height: 25%;}
+
+
+/* ------ FOOTER ------ */
+
+footer img{
+    align-items: center;
+
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* -------------- MEDIA QUERIES INDEX ------------- */
+@media (max-width:768px){
+    .encabezado{
+        width: 100%;
+    }
+    .destacados{
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+        "card1 card2" 
+        "card3 card4"
+        "card5 card6";
+
+    }
+    .barra__navegacion{
+        display: flex;
+        flex-wrap: wrap;
+        margin: none;
+        width:100%;
+    }
+
+    .menu__boton {
+        display: grid;
+        grid-row-gap: 10px;
+    }
+    .zona__banner p{
+        margin-top: 10px;
+
+    }
+    .encabezado{
+    background-color: #E3B7A0;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    }   
+    .valu__logo {
+        display: none;
+    }
+}
+
+@media (max-width:368px){
+
+    .barra__navegacion{
+        display: flex;
+        flex-wrap: wrap;
+        margin: none;
+        width:100%;
+        font-size: 12px;
+    }
+    
+    .contenedor{
+        display: grid;
+        grid-template-areas: 
+        "boton1 boton2 boton3"
+        "boton4 boton5 boton5";
+        justify-items: center;
+    
+    }
+    
+    #boton1{grid-area: Home;}
+    #boton2{grid-area: Clothes;}
+    #boton3{grid-area: intimates;}
+    #boton4{grid-area: contacto;}
+    #boton5{grid-area: Terminos;}
+
+    .fondo__byb{
+        display: grid;
+        justify-content: center;
+        align-content: space-between;
+    }
+    .destacados{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .destacada{
+        margin-bottom: 10px;
+    }
+    .texto__dest{
+        margin-bottom: 10px;
+    }
+    
+    footer{
+        margin-top: 20px;
+    }
+}
+
+/* ------------ MEDIA QUERIES SECCION TERMINOS Y CONDICIONES --------------*/
+
+@media(max-width:768px){
+    .padre{
+        grid-template-areas:
+        "showroom envios"
+        "bariloche publicidad "
+        "footer footer";   
+
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .border{
+        border: none;
+    }
+    .img__showroom{ height: 15%;}
+    .img__brc{ height: 15%;}
+    .img__publi{ height: 15%;}
+    .img__envios{ height: 15%;}
+    
+    #bariloche{ padding: 5%;}
+    
+}
+
+/* -------------- MEDIA QUERIES SECCION CLOTHES -------------- */
+
+@media(max-width:768px){
+    .conteiner{
+        grid-template-areas:
+        "clothes1 clothes2"
+        "clothes3 clothes4";
+    }
+    .img__clothes{height: 180px; width: auto;}
+}
+@media(max-width:368px){
+    .img__clothes{ height: 150px; width: auto;}
+}
+
