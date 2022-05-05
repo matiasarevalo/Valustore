@@ -1,0 +1,9 @@
+.destacada{
+    height: 250px;
+    transition: all 1s;
+}
+.destacada:hover{
+    transform:scale(1.1);
+    width: auto;
+    
+}

@@ -1,8 +1,8 @@
-<img src="images/logo.jpg" width="200px">
+<img src="images/logo.jpg" width="300px">
 
 # Proyecto ValuStore - Desarrollo web - CoderHouse
 
- Este proyecto trata a cerca de hacer nuestro propio sitio web, utilizando el programa visual studio code, con sus respectivas herramientas y funciones. 
+ Este proyecto trata a cerca de crear nuestro propio sitio web, utilizando el programa Visual Studio Code, con sus respectivas herramientas y funciones. Particularmente, mi pagina es de venta de ropa femenina.
 
 
 

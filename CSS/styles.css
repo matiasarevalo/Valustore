@@ -174,11 +174,10 @@ a{text-decoration: none;}
 }
 
 .destacada{
-    height:250px;
+    height: 200px;
     width: auto;
     margin-bottom: 20px;
     box-shadow: 15px 15px 15px rgb(0, 0, 0, 0.5);
-
 }
 .card{
     width: 400px;
